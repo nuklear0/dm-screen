@@ -1,0 +1,11 @@
+#dice{
+  display: inline-flex;
+}
+
+#diceWrappers{
+  width: 800px;
+  align-content: center;
+  margin: auto;
+}
+
+

@@ -1,0 +1,13 @@
+<mat-card>
+  <div id="diceWrappers">
+    <div id="dice" *ngFor="let dice of dices">
+      <button mat-button (click)="roll(dice.sides)">{{dice.sides}}</button>
+    </div>
+  </div>
+  <div id="results">
+    <div *ngFor="let result of results">
+      Your rolled a {{result.diceSides}} and got a {{result.rollResult}}
+    </div>
+  </div>
+  <button mat-button (click)="reset()">Reset</button>
+</mat-card>
