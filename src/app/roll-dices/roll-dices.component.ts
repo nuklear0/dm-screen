@@ -1,7 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Dice} from './dice/dice';
 import {Result} from './dice/result';
-import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
   selector: 'app-roll-dices',

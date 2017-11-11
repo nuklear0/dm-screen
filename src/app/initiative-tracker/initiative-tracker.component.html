@@ -1,3 +1,21 @@
-<p>
-  initiative-tracker works!
-</p>
+<mat-card>
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Name" [(ngModel)]="nameInput">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Initiative" [(ngModel)]="initiative">
+    </mat-form-field>
+    <button mat-button (click)="addToList(nameInput, initiative)">Enter</button>
+    <div>
+      <button mat-button (click)="sortByInitiative()">Sort</button>
+      <button mat-button (click)="resetList()">Reset</button>
+    </div>
+    <div>
+      <div *ngFor="let c of listOfInitiatives">{{c.name}}
+        <button mat-button (click)="removeFromList(c)">X</button>
+      </div>
+
+    </div>
+  </div>
+</mat-card>

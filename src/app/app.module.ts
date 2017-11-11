@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { RollDicesComponent } from './roll-dices/roll-dices.component';
 import { InitiativeTrackerComponent } from './initiative-tracker/initiative-tracker.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { InitiativeTrackerComponent } from './initiative-tracker/initiative-trac
   imports: [
     BrowserModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
   ],
   exports: [
     MaterialModule,
