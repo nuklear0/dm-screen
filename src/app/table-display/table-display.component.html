@@ -1,0 +1,23 @@
+<mat-card id="tableDisplayComponent">
+  <mat-form-field>
+    <mat-select [(value)]="selected">
+      <mat-option></mat-option>
+      <mat-option value="combat">Combat</mat-option>
+      <mat-option value="conddying">Conditions &amp; Dying</mat-option>
+      <mat-option value="eqweap">Weapons</mat-option>
+      <mat-option value="eqarmor">Armor &amp; Services</mat-option>
+      <mat-option value="misc">Misc</mat-option>
+      <mat-option value="checkstr">Strength Checks</mat-option>
+      <mat-option value="checkdex">Dex Checks</mat-option>
+      <mat-option value="checkcon">Con Checks</mat-option>
+      <mat-option value="checkint">Int Checks</mat-option>
+      <mat-option value="checkwis">Wis Checks</mat-option>
+      <mat-option value="checkcha">Cha Checks</mat-option>
+      <mat-option value="encrand">Random Encounters</mat-option>
+      <mat-option value="encbuild">Encounter Building</mat-option>
+    </mat-select>
+  <div>
+    <img src="../../assets/images/{{selected}}.jpg">
+  </div>
+  </mat-form-field>
+</mat-card>

@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { RollDicesComponent } from './roll-dices/roll-dices.component';
 import { InitiativeTrackerComponent } from './initiative-tracker/initiative-tracker.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { TableDisplayComponent } from './table-display/table-display.component';
+import {MatSelectModule} from '@angular/material';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RollDicesComponent,
-    InitiativeTrackerComponent
+    InitiativeTrackerComponent,
+    TableDisplayComponent
   ],
   imports: [
     BrowserModule,
     MaterialModule,
     FormsModule,
+    MatSelectModule
   ],
   exports: [
     MaterialModule,
