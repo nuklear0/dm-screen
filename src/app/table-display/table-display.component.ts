@@ -8,12 +8,20 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class TableDisplayComponent implements OnInit {
 
-  selected: string;
+  source: string;
 
   constructor() {
   }
 
   ngOnInit() {
+  }
+
+  setSource(source: string) {
+    this.source = source;
+  }
+
+  getSource() {
+    return './images/' + this.source + '.jpg';
   }
 
 }
