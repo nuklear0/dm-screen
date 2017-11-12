@@ -9,6 +9,8 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 export class TableDisplayComponent implements OnInit {
 
   selected: string;
+  externalUrl = '/dm-screen/assets/images/';
+  internalUrl= '/assets/images/';
 
   constructor() {
   }

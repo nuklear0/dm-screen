@@ -1,4 +1,3 @@
 #tableDisplayComponent{
-  width: 59%;
-  display: inline-flex;
+  min-width: 59%;
 }

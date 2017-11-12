@@ -16,8 +16,9 @@
       <mat-option value="encrand">Random Encounters</mat-option>
       <mat-option value="encbuild">Encounter Building</mat-option>
     </mat-select>
-  <div>
-    <img src="/dm-screen/assets/images/{{selected}}.jpg">
-  </div>
+    <div>
+      <img [src]="externalUrl + selected +'.jpg'">
+      <img [src]="internalUrl + selected + '.jpg'">
+    </div>
   </mat-form-field>
 </mat-card>
