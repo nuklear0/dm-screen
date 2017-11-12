@@ -8,7 +8,9 @@ import { RollDicesComponent } from './roll-dices/roll-dices.component';
 import { InitiativeTrackerComponent } from './initiative-tracker/initiative-tracker.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { TableDisplayComponent } from './table-display/table-display.component';
-import {MatSelectModule} from '@angular/material';
+import {MatDatepicker, MatSelectModule} from '@angular/material';
+import { TimeTrackerComponent } from './time-tracker/time-tracker.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 @NgModule({
@@ -16,13 +18,15 @@ import {MatSelectModule} from '@angular/material';
     AppComponent,
     RollDicesComponent,
     InitiativeTrackerComponent,
-    TableDisplayComponent
+    TableDisplayComponent,
+    TimeTrackerComponent,
   ],
   imports: [
     BrowserModule,
     MaterialModule,
     FormsModule,
-    MatSelectModule
+    MatSelectModule,
+    FlexLayoutModule
   ],
   exports: [
     MaterialModule,

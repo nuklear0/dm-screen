@@ -6,6 +6,7 @@ import {
   MatToolbarModule,
   MatIconModule,
   MatCardModule, MatInputModule,
+  MatSelectModule
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -18,6 +19,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatCardModule,
     MatInputModule,
     BrowserAnimationsModule,
+    MatSelectModule,
   ],
   exports: [
     MatButtonModule,
@@ -26,7 +28,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatIconModule,
     MatCardModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSelectModule,
   ]
 })
 export class MaterialModule {

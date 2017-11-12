@@ -1,3 +1,8 @@
-#tableDisplayComponent{
-  min-width: 59%;
+img {
+  min-width: 100%;
+  height: auto;
+}
+
+#tableDisplayComponent {
+  width: 90%;
 }

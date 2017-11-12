@@ -1,0 +1,8 @@
+<mat-card>
+  <div>{{date.getUTCHours()}} : {{date.getMinutes()}}</div>
+  <div>
+    <button mat-button (click)="addOneHour()">One hour</button>
+    <button mat-button (click)="addHalf()">30 Min</button>
+    <button mat-button (click)="addEight()">Eight hours</button>
+  </div>
+</mat-card>

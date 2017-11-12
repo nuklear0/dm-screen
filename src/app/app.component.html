@@ -1,7 +1,12 @@
-<app-roll-dices></app-roll-dices>
-<div>
-  <app-table-display></app-table-display>
-  <app-initiative-tracker></app-initiative-tracker>
+<div fxLayout="column">
+  <app-roll-dices></app-roll-dices>
+  <div fxLayout="row">
+    <app-table-display fxLayout="column" fxFlex="70"></app-table-display>
+    <div fxLayout="column" fxFlex="30">
+      <app-initiative-tracker></app-initiative-tracker>
+      <app-time-tracker></app-time-tracker>
+    </div>
+  </div>
 </div>
 
 
