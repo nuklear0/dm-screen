@@ -11,7 +11,8 @@ import { TableDisplayComponent } from './table-display/table-display.component';
 import {MatDatepicker, MatSelectModule} from '@angular/material';
 import { TimeTrackerComponent } from './time-tracker/time-tracker.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
-
+import { LocalStorageModule } from 'angular-2-local-storage';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,11 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MaterialModule,
     FormsModule,
     MatSelectModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    LocalStorageModule.withConfig({
+      prefix: 'my-app',
+      storageType: 'localStorage'
+    })
   ],
   exports: [
     MaterialModule,
