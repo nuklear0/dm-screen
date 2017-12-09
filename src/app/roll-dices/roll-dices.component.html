@@ -7,7 +7,7 @@
   </div>
   <div id="results">
     <div *ngFor="let result of results">
-      Your rolled a {{result.diceSides}} and got a {{result.rollResult}}
+      Your rolled a {{result.diceSides}} and got a <a>{{result.rollResult}}</a>
     </div>
   </div>
   <button mat-button (click)="reset()">Reset</button>

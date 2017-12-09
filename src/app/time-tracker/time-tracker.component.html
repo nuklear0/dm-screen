@@ -1,5 +1,11 @@
 <mat-card>
-  <div>{{date.getUTCHours()}} : {{date.getMinutes()}}</div>
+  <mat-form-field class="input-fields">
+    <input matInput [(ngModel)]="hour" (change)="onChange('hour')">
+  </mat-form-field>
+  :
+  <mat-form-field class="input-fields">
+    <input matInput [(ngModel)]="minute" (change)="onChange('minute')">
+  </mat-form-field>
   <div>
     <button mat-button (click)="addOneHour()">One hour</button>
     <button mat-button (click)="addHalf()">30 Min</button>
