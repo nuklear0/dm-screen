@@ -12,6 +12,7 @@ export class InitiativeTrackerComponent implements OnInit {
   listOfInitiatives: Character[];
   nameInput: string;
   initiative: number;
+  hp: number;
 
   constructor() {
     this.listOfInitiatives = [];
@@ -20,10 +21,11 @@ export class InitiativeTrackerComponent implements OnInit {
   ngOnInit() {
   }
 
-  addToList(name: string, initiative: number) {
-    this.listOfInitiatives.push(new Character(name, initiative));
+  addToList(name: string, initiative: number, hp: number) {
+    this.listOfInitiatives.push(new Character(name, initiative, hp));
     this.nameInput = '';
     this.initiative = undefined;
+    this.hp = undefined;
   }
 
   removeFromList(c: Character) {

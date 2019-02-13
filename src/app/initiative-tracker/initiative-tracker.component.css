@@ -1,3 +1,9 @@
-#initiativeTrackComponent{
+#initiativeTrackComponent {
   display: inline-flex;
+}
+
+.orderItem div, button{
+
+    display: inline-flex;
+
 }
